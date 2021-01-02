@@ -2,6 +2,8 @@
 #include <string>
 using namespace std;
 
+/* Lectura */
+
 int readInt(string txt)
 {
     int dato;
@@ -62,12 +64,21 @@ string read(string txt)
     return dato;
 }
 
+/* Escritura */
+
+#define print(x) cout << x ;
+
+#define println(x) cout << x << endl;
+
+/* Operaciones con Strings */
+
 string upper(string cadena)
 {
     for (int i = 0; i < cadena.length(); i++)
         cadena[i] = toupper(cadena[i]);
     return cadena;
 }
+
 string lower(string cadena)
 {
     for (int i = 0; i < cadena.length(); i++)
@@ -75,52 +86,7 @@ string lower(string cadena)
     return cadena;
 }
 
-void println(string dato)
-{
-    cout << dato << endl;
-}
+/* Matematica */
 
-void print(string dato)
-{
-    cout << dato;
-}
+#include <math.h>
 
-void println(int dato)
-{
-    cout << dato << endl;
-}
-
-void print(int dato)
-{
-    cout << dato;
-}
-
-void println(double dato)
-{
-    cout << dato << endl;
-}
-
-void print(double dato)
-{
-    cout << dato;
-}
-
-void println(float dato)
-{
-    cout << dato << endl;
-}
-
-void print(float dato)
-{
-    cout << dato;
-}
-
-void println(char dato)
-{
-    cout << dato << endl;
-}
-
-void print(char dato)
-{
-    cout << dato;
-}

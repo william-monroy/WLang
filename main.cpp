@@ -2,10 +2,8 @@
 
 int main() {
 
-    println("Hola\n");
+    println("Hola")
     string nombre = upper(read("Introduce tu nombre: "));
-
-    print(nombre);
-
-    return 0;
+    print(nombre)
+    
 }
